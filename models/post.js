@@ -16,10 +16,12 @@ const postSchema= new mongoose.Schema(
       required:true,
       maxlength:1000,
     },
-    like:{
-      type:Boolean,
-      default:false,
+    dateCreated:{
+      type:Date,
+      required:true,
+      default:Date.now,
     },
+
   }
 )
 
